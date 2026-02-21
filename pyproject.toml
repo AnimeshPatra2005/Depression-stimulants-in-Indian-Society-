@@ -6,15 +6,16 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "zenml[server]>=0.55.0",
-    "torch>=2.4.0",               # Stable for CUDA 11.8
-    "torchvision", 
+    "torch>=2.4.0", # Stable for CUDA 11.8
+    "torchvision",
     "transformers",
     "sentence-transformers",
     "scikit-fuzzy",
     "pandas",
     "zstandard",
     "accelerate",
-    "bitsandbytes>=0.42.0",      # Essential for 4-bit Menta loading
+    "bitsandbytes>=0.42.0", # Essential for 4-bit Menta loading
+    "dvc[gdrive]>=3.66.1",
 ]
 
 [[tool.uv.index]]
